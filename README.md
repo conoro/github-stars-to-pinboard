@@ -1,5 +1,5 @@
 # GitHub Stars to Pinboard Bookmarks
-This Serverless function runs on AWS Lambda once per hour. It saves the last 8 repos your Starred as [Pinboard](https://pinboard.in) bookmarks and tags them as "github".
+This Serverless function runs on AWS Lambda once per hour. It saves the most recent repos that you Starred as [Pinboard](https://pinboard.in) bookmarks and tags them as "github".
 
 # Installation
 * You need Node.js installed locally
@@ -18,4 +18,4 @@ This Serverless function runs on AWS Lambda once per hour. It saves the last 8 r
 * Edit serverless.yml and configure your GitHub Username, GitHub Access Token and Pinboard Access Token
 * Deploy to AWS Lambda with `serverless deploy`
 * Wait an hour for the first run or manually open the URL that the deploy command lists on successful execution
-* You should see the 8 most recent GitHub Starred repos listed as bookmarks on Pinboard
+* You should see the most recent GitHub Starred repos listed as bookmarks on Pinboard

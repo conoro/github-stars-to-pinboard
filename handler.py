@@ -31,7 +31,8 @@ def lambda_handler(event, context):
     since = (datetime.now() - timedelta(hours=1)).isoformat()
     starred_repos = fetch_starred_repos(since)
 
-    for repo in starred_repos[:8]:
+#    for repo in starred_repos[:8]:
+    for repo in starred_repos:
         if save_to_pinboard(repo):
             #print(repo)
             print(f"Saved {repo['html_url']} to Pinboard")
